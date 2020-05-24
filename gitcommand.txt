@@ -1,0 +1,48 @@
+git command
+
+1) $ git init
+
+ Git 저장소 초기화 ( 맨 처음 한번만 해주면 됨 )
+
+2) $ git status
+
+  저장소 상태 체크, commit 할 수 있는게 뭐가 있는지
+
+3) $ git add . ( $ git add -A)
+
+  수정한 모든 파일을 staging area로 올리기
+
+​4) $ git commit -m 메세지
+
+  Add 된 파일을 Local Repository로 파일을 등록 시켜 줍니다.
+해당 Commit에는 메세지를 같이 포함해서 Commit 마다 어떤 작업을 수행 하였는지
+ Log를 적어 줄 수 있습니다.
+
+5) $git remote add origin
+
+​내 컴퓨터 상의 repository를 온라인 repository로 만드는거
+
+​6) gitignore
+
+  Git에 올리고 싶지 않은 것들을 미리 걸러 놓음.
+
+database나 password, 가상환경(용량만 잡아먹는 쓸모없는 거) 등을 
+git에 올리지 않기 위해서 서버를 돌리기 전에 ignore셋팅을 해줘야하마
+
+​ex) 크롬에 gitignore.io검색 후에 django를 클릭하면, 
+다른 사람들이 무시하면 좋겠다고 생각한 것들 올려줬다 이미!!
+그걸 gitignore에 복사 붙여넣기 해주면 된다!
+
+​7) git --version
+
+  내가 설치한 git의 버전 확인
+
+​= 경우에 따라서 처음 작업하는 거라면,
+
+git --global user.email 이메일주소 랑 user.name을 올려야 할 수 있음
+
+8) Reset
+Add 된 파일을 원치 않을 경우 다시 Staging Area에서 내릴 수 있습니다.
+
+ git reset [ 파일이름 ]
+ git reset .
